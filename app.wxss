@@ -1,0 +1,45 @@
+page {
+  background: #f0f4f8;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    Segoe UI, Arial, Roboto, "PingFang SC", "miui", "Hiragino Sans GB",
+    "Microsoft Yahei", sans-serif;
+}
+#van-dialog button {
+  width: 100% !important;
+}
+/* 解决vant弹出框按钮漂移 */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 2586184 */
+  src: url("//at.alicdn.com/t/font_2586184_l8hdy4v0qrk.woff2?t=1622605119423")
+      format("woff2"),
+    url("//at.alicdn.com/t/font_2586184_l8hdy4v0qrk.woff?t=1622605119423")
+      format("woff"),
+    url("//at.alicdn.com/t/font_2586184_l8hdy4v0qrk.ttf?t=1622605119423")
+      format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiajiantou:before {
+  content: "\e62f";
+}
+
+.icon-shangjiantou:before {
+  content: "\e630";
+}

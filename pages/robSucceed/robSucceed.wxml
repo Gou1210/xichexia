@@ -1,0 +1,100 @@
+<view class="carInfo">
+  <!-- 洗护地点 -->
+  <view bindtap='getLocation' class="sheet check">
+    <van-icon color="#F0D208" size="70rpx" name="checked" />
+    <text wx:if="{{orderForm.orderStatus==2}}">抢单成功，请尽快为客户服务</text>
+    <text wx:if="{{orderForm.orderStatus!=2}}">订单详情</text>
+  </view>
+  <!-- 洗护地点 -->
+  <view bindtap='getLocation' class="sheet">
+    <span class="caption">洗车地点:</span>
+    <view class="gut">
+      <span>{{orderForm.locationArea}}</span>
+    </view>
+  </view>
+  <!-- 洗护类型 -->
+  <view bindtap='getLocation' class="sheet">
+    <span class="caption">洗护类型:</span>
+    <view class="gut">
+      <span>{{orderForm.washProtectName}}</span>
+    </view>
+  </view>
+  <!-- 车型 -->
+  <view bindtap='getLocation' class="sheet">
+    <span class="caption">汽车车型:</span>
+    <view class="gut">
+      <span>{{orderForm.carTypeText}}</span>
+    </view>
+  </view>
+  <!-- 姓名 -->
+  <view class="sheet  address">
+    <span class="caption">车主姓名:</span>
+    <view class="gut">
+      <span>{{orderForm.name}}{{orderForm.sexText}}</span>
+    </view>
+  </view>
+
+  <!-- 联系方式 -->
+  <view class="sheet">
+    <span class="caption">联系方式:</span>
+    <view class="gut">
+      <span>{{orderForm.phone}}</span>
+    </view>
+  </view>
+
+  <!-- 品牌 -->
+  <view bindtap='getLocation' class="sheet">
+    <span class="caption">汽车品牌:</span>
+    <view class="gut">
+      <span>{{orderForm.carBrand}}</span>
+    </view>
+  </view>
+
+  <!-- 牌号 -->
+  <view bindtap='getLocation' class="sheet">
+    <span class="caption">汽车牌号:</span>
+    <view bindtap="showNumEvent" class="gut">
+      <span>{{orderForm.plateNumber}}</span>
+    </view>
+   订单状态 {{orderForm.orderStatus}}
+   钥匙状态{{orderForm.carKeyStatus}}
+  </view>
+  <van-dialog id="van-dialog" />
+
+</view>
+
+
+<view class="btnList">
+  <view bindtap="toNav" class="submit">
+    <van-icon name="location-o" />
+    地址导航
+  </view>
+  <view bindtap="toPhone" class="submit">
+    <van-icon name="phone-o" />
+    联系客户
+  </view>
+  <view wx:if="{{orderForm.carKeyStatus==1&&orderForm.orderType==2}}" bindtap="takeKey"  class="submit">
+    <van-icon name="logistics" />
+    取出钥匙
+  </view>
+  <view wx:if="{{orderForm.carKeyStatus!=1&&orderForm.orderStatus==2}}" bindtap="startEndWash" data-url="startWash" class="submit">
+    <van-icon name="logistics" />
+    开始洗车
+  </view>
+  <view wx:if="{{orderForm.carKeyStatus==2&&orderForm.orderStatus==4}}" bindtap="takeKey" data-url="startWash" class="submit">
+    <van-icon name="logistics" />
+    归还钥匙
+  </view>
+  <view wx:if="{{orderForm.orderStatus==3&&orderForm.carKeyStatus==2}}" bindtap="startEndWash" data-url="endWash" class="submit">
+    <van-icon name="logistics" />
+    结束洗车
+  </view>
+  <view wx:if="{{orderForm.orderStatus==3&&orderForm.carKeyStatus==0}}" bindtap="startEndWash" data-url="endWash" class="submit">
+    <van-icon name="logistics" />
+    结束洗车
+  </view>
+  <view wx:if="{{orderForm.orderStatus==2&&orderForm.carKeyStatus!=2}}"  bindtap="deleteCar" class="submit">
+    <van-icon name="revoke" />
+    取消订单
+  </view>
+</view>

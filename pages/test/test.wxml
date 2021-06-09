@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<view class="box">
+  <view class="item1">1</view>
+  <view class="item2">2</view>
+  <view bindtap="a" class="item3">3333333</view>
+</view>

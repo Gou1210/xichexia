@@ -1,0 +1,79 @@
+
+
+.pictureBox {
+  margin: 0 auto;
+  margin-top: 30rpx;
+  padding: 30rpx;
+  width: 630rpx;
+  height: 800rpx;
+  background: #FFFFFF;
+  border-radius: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.picText {
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #333333;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+.takeList{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.picOne {
+  width: 131rpx;
+  height: 220rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  color: #999999;
+  font-size: 28rpx;
+}
+.describe{
+  color: #F33B36;
+  font-size: 26rpx;
+}
+.pictureBox image {
+  width: 131rpx;
+  height: 113rpx;
+  background: #F0F4F8;
+  border-radius: 30rpx;
+}
+.pic{
+position: relative;
+margin-top: 20rpx;
+}
+.close{
+  position: absolute;
+  right: 0;
+  top: -30rpx;
+}
+.assessText .van-cell {
+  width: 630rpx;
+  height: 225rpx;
+  background: #F0F4F8;
+  border-radius: 50rpx;
+  background-color: #F0F4F8;
+}
+
+.submit{
+  margin-top: 50rpx;
+  width: 630rpx;
+  height: 88rpx;
+  background: #F0D208;
+  border-radius: 25rpx;
+  font-size: 28rpx;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  line-height: 88rpx;
+}

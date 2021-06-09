@@ -1,0 +1,116 @@
+page {
+  background-color: #f0f4f8;
+}
+
+.carInfo {
+  width: 690rpx;
+  height: 783rpx;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.sheet {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  align-items: center;
+  width: 611rpx;
+  margin: 0 auto;
+}
+
+.sheet .caption {
+  color: #333333;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  position: relative;
+  margin-left: 30rpx;
+}
+
+.check {
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.check text {
+  width: 100%;
+  text-align: center;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* .sheet .caption:after {
+  content: '*';
+  border-radius: 6rpx;
+  position: absolute;
+  left: -20rpx;
+  top: 50%;
+  transform: translateY(-40%);
+  color: #EA0101;
+} */
+
+.info .caption:after {
+  background: #FF0000;
+}
+
+.type .caption:after {
+  background: #0F2D5F;
+}
+
+.site .caption:after {
+  width: 0;
+}
+
+.sheet .gut {
+  color: #999999;
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upCarImg {
+  border: none;
+}
+
+.carImg {
+  margin-left: 200rpx;
+  margin-top: 200rpx;
+}
+
+.btnList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30rpx;
+  width: 630rpx;
+  height: 229rpx;
+  background: #FFFFFF;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+
+.submit {
+  width: 229rpx;
+  height: 60rpx;
+  background: #F0D208;
+  border-radius: 25rpx;
+  text-align: center;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}

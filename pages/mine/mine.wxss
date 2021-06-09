@@ -1,0 +1,235 @@
+page {
+  background: #f0f4f8;
+}
+
+.top {
+  height: 240rpx;
+  background-color: #f0d208;
+  position: relative;
+}
+.workStatus {
+  position: absolute;
+  right: 60rpx;
+  top: 10rpx;
+  width: 250rpx;
+  height: 140rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.status {
+  color: green;
+}
+.status2 {
+  color: red;
+}
+.dianji {
+  width: 150rpx;
+  height: 50rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+}
+.nickname {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  margin-left: 30rpx;
+}
+
+.head {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.nickname span {
+  /* margin-left: 10rpx; */
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #000000;
+  font-size: 26rpx;
+}
+
+.bottom {
+  margin-top: -50rpx;
+  height: 800rpx;
+  border-top-left-radius: 50rpx;
+  border-radius: 50rpx;
+  background: #f0f4f8;
+  padding: 40rpx 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tenor {
+  margin-top: -40rpx;
+  z-index: 99;
+  position: relative;
+  box-shadow: 0 0 20rpx rgb(237, 237, 237);
+  width: 620rpx;
+  height: 195rpx;
+  background: #ffffff;
+  border-radius: 50rpx;
+  display: flex;
+  font-size: 26rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 37rpx;
+}
+
+.tenorBox {
+  width: 132rpx;
+  height: 160rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tenor image {
+  width: 132rpx;
+  height: 132rpx;
+}
+
+.tenor p {
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.give {
+  width: 690rpx;
+  height: 418rpx;
+  background: #ffffff;
+  border-radius: 50rpx;
+  padding: 0 39rpx;
+}
+
+.giveBox {
+  display: flex;
+  justify-content: space-between;
+  height: 103rpx;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.giveBox .left {
+  display: flex;
+  align-items: center;
+}
+.giveBox p {
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+  line-height: 100%;
+}
+.giveBox .tubiao {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+}
+.giveBox .arrow {
+  width: 13rpx;
+}
+.lastGive {
+  border-bottom: none;
+}
+.quit {
+  margin-top: 50rpx;
+  width: 630rpx;
+  height: 88rpx;
+  background: #f0d208;
+  border-radius: 25rpx;
+  font-size: 28rpx;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  line-height: 88rpx;
+}
+
+.loginBtn {
+  width: 200rpx !important;
+  margin: 0 !important;
+  background-color: #f0d208;
+}
+.home {
+  color: #fff;
+  margin-left: 20rpx;
+}
+
+.user {
+  width: 100%;
+  height: auto;
+  height: 200rpx;
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.user-top {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.image-box {
+  width: 140rpx;
+  height: 140rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user-msg {
+  flex: 1;
+  height: 100%;
+  padding-left: 25rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.user-msg-title {
+  font-size: 45rpx;
+  font-weight: bold;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+.user-msg-staus {
+  height: 45rpx;
+  margin-top: 23rpx;
+  display: flex;
+  align-items: center;
+}
+.go-work {
+  width: auto;
+  height: 43rpx;
+  line-height: 43rpx;
+  margin-left: 30rpx;
+  padding: 0 30rpx;
+  transition: 0.2s all;
+  border-radius: 25rpx;
+  font-size: 25rpx;
+}
+
+.staus-text {
+  font-size: 30rpx;
+}
+.rest-class {
+  color: #999;
+  background: #fff;
+}
+.work-classs {
+  background: #00a962;
+  color: #fff;
+}
+.hover-c {
+  transform: scale(0.95);
+}

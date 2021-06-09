@@ -1,0 +1,36 @@
+<view class="wrap">
+  <view class="user-info">
+    <van-cell-group>
+      <van-field label="真实姓名" bindchange="editName" model:value="{{userInfo.name}}" disabled="{{!isEdit}}"  placeholder="请输入"/>
+      <van-field label="手机号" bindchange="editPhone" model:value="{{userInfo.phone}}" disabled="{{!isEdit}}"  placeholder="请输入"/>
+      <!-- <van-field label="收益（元）" value="{{userInfo.totalAmount}}" disabled />
+      <van-field label="提现（元）" value="{{userInfo.balance}}" disabled /> -->
+    </van-cell-group>
+    <view class="btn-area">
+      <!-- <view class="submit" bindtap="openDialog" >提现</view> -->
+      <view class="submit"  bindtap="bindEdit">{{isEdit?'确认':'编辑'}}</view>
+    </view>
+  </view>
+  <van-dialog
+  use-slot
+  title="提现"
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="getUserInfo"
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+>
+
+<van-cell-group  >
+  <van-field
+  type="number"
+  label="提现金额"
+    value="{{ diaAmount }}"
+    placeholder="请输入提现金额"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+</van-dialog>
+  <van-toast id="van-toast" />
+</view>

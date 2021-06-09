@@ -1,0 +1,30 @@
+<view class="body">
+				<form class="form" bindsubmit="formSubmit">
+					<view class="face-wapper">
+						<image src="https://6266-bfxy-hpbml-1302612614.tcb.qcloud.la/image/women/touxiang.png?sign=47a901d76bb4aa131663ad9c16e6869d&t=1594351727" class="face"></image>
+					</view>
+
+					<view class="info-wapper">
+						<label class="words-lbl">账号</label>
+						<input name="username" type="text" value="" class="input" placeholder="请输入您的手机号" placeholder-class="graywords"/>
+					</view>
+					
+					<view class="info-wapper" style="margin-top: 40upx;">
+						<label class="words-lbl">密码</label>
+						<input name="password" type="text" value="" password="true" class="input" placeholder="请输入密码" placeholder-class="graywords" />
+					</view>
+					<view  class="submit">
+            <button bindtap="formSubmit" form-type="submit" >登录</button>
+          </view>
+
+				</form>		
+				<!-- <view class="forgetRegist">
+					<navigator url="../regist/regist" class="regist">
+					还没有账号?点击这里注册
+				</navigator>
+					<navigator url="../regist/regist" class="forget">
+					忘记密码?
+				</navigator>
+				</view> -->
+
+	</view>

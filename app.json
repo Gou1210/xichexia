@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/robSucceed/robSucceed",
+    "pages/startWash/startWash",
+    "pages/endWash/endWash",
+    "pages/mine/mine",
+    "pages/profit/profit",
+    "pages/userInfo/userInfo",
+    "pages/changePassword/changePassword",
+    "pages/myAssess/myAssess",
+    "pages/test/test",
+    "pages/login/login",
+    "pages/yetorder/yetorder",
+    "pages/serviceorder/serviceorder",
+    "pages/finishorder/finishorder",
+    "pages/assessDetail/assessDetail",
+    "pages/refundorder/refundorder",
+    "pages/regist/regist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+    "plugins": {
+      "routePlan": {
+        "version": "1.0.12",
+        "provider": "wx50b5593e81dd937a"
+      }
+    },
+    "tabBar": {
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      }, {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心"
+      }]
+    },
+      "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序定位"
+        }
+      },
+      "requiredBackgroundModes": [
+        "location"
+      ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

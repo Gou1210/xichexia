@@ -1,0 +1,258 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/robSucceed/robSucceed",
+          "pathName": "pages/robSucceed/robSucceed",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/startWash/startWwash",
+          "pathName": "pages/startWash/startWwash",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/profit/profit",
+          "pathName": "pages/profit/profit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userInfo/userInfo",
+          "pathName": "pages/userInfo/userInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/changePassword/changePassword",
+          "pathName": "pages/changePassword/changePassword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myAssess/myAssess",
+          "pathName": "pages/myAssess/myAssess",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/regist/regist",
+          "pathName": "pages/regist/regist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/regist/regist",
+          "pathName": "pages/regist/regist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/regist/regist",
+          "pathName": "pages/regist/regist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userInfo/userInfo",
+          "pathName": "pages/userInfo/userInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/robSucceed/robSucceed",
+          "pathName": "pages/robSucceed/robSucceed",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/profit/profit",
+          "pathName": "pages/profit/profit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/serviceorder/serviceorder",
+          "pathName": "pages/serviceorder/serviceorder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/startWash/startWash",
+          "pathName": "pages/startWash/startWash",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/serviceorder/serviceorder",
+          "pathName": "pages/serviceorder/serviceorder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/robSucceed/robSucceed",
+          "pathName": "pages/robSucceed/robSucceed",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/profit/profit",
+          "pathName": "pages/profit/profit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/changePassword/changePassword",
+          "pathName": "pages/changePassword/changePassword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/assesDetail/assessDetail",
+          "pathName": "pages/assesDetail/assessDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myAssess/myAssess",
+          "pathName": "pages//assessDetail//assessDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/assesDetail/assessDetail",
+          "pathName": "pages/assesDetail/assessDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

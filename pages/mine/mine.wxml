@@ -1,0 +1,107 @@
+<view class="top">
+  <!-- <view class="workStatus" wx:if="{{workStatus==0}}">
+  <view>状态：
+
+  <span class="status">休息中</span>
+  </view>
+  <span bindtap="work" data-workStatus="{{1}}" class="dianji">点击上班</span>
+  </view>
+  <view class="workStatus" wx:if="{{workStatus==1}}">
+  <view>状态：
+  <span class="status2">上班中</span>
+  </view>
+    <span span bindtap="work" data-workStatus="{{0}}" class="dianji">点击下班</span>
+  </view>
+  <view wx:if="{{username}}" class="nickname">
+    <image mode="widthFix" class="head" src="../../static/img/home/xichexia.png"></image>
+    <span>{{username}}</span>
+  </view>
+  <view  wx:if="{{!username}}" class="nickname">
+    <image mode="widthFix" class="head" src="../../static/img/mine/touxiang.png" ></image>
+    <button class="loginBtn" data-url="login" bindtap="loginTap" >登录</button>
+  </view> -->
+  
+
+
+  <view class="user">
+    <view class="user-top">
+      <view class="image-box">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <!-- <image mode="widthFix"  src="../../static/img/home/xichexia.png"></image> -->
+      <view class="user-msg">
+        <text class="user-msg-title">{{username}}</text>
+        <view class="user-msg-staus">
+         <view class="staus-text">
+            {{workStatus===1?'上班中':'休息中'}}
+         </view>
+          <view hover-class="hover-c" class="go-work {{workStatus!==1?'rest-class':'work-classs'}}"  data-workStatus="{{workStatus===1?0:1}}" bindtap="work">
+            {{workStatus===1?'立即休息':'立即上班'}}
+          </view>
+        </view>
+      </view>
+    </view>
+      
+
+  </view>
+</view>
+
+<view class="bottom">
+  <!-- 进程 -->
+  <view class="tenor">
+<view bindtap="toLink" data-url='yetorder' class="tenorBox">
+  <image mode="widthFix" src="../../static/img/mine/daijiedan.png"></image>
+  <p>已接单</p>
+</view>
+<view bindtap="toLink" data-url='serviceorder' class="tenorBox">
+  <image mode="widthFix" src="../../static/img/mine/fuwuzhong.png"></image>
+  <p>服务中</p>
+</view>
+<view  bindtap="toLink" data-url='finishorder' class="tenorBox">
+  <image mode="widthFix" src="../../static/img/mine/yiwancheng.png"></image>
+  <p>已完成</p>
+</view>
+<view bindtap="toLink" data-url='refundorder' class="tenorBox">
+  <image mode="widthFix" src="../../static/img/mine/yijiekuan.png"></image>
+  <p>已取消</p>
+</view>
+</view>
+<!-- 进程结束 -->
+
+<!-- 服务选择 -->
+<view class="give">
+<view bindtap="toLink" data-url="userInfo" class="giveBox">
+  <view  class="left">
+    <image class="tubiao" src="../../static/img/mine/message.png"></image>
+  <p>基本信息</p>
+  </view>
+
+  <image mode="widthFix" class="arrow" src="../../static/img/mine/back.png"></image>
+</view>
+<view bindtap="toLink" data-url="profit" class="giveBox">
+  <view class="left">
+  <image class="tubiao" src="../../static/img/mine/detailed.png"></image>
+  <p>收益明细</p>
+  </view>
+  <image mode="widthFix" class="arrow" src="../../static/img/mine/back.png"></image>
+</view>
+<view bindtap="toLink" data-url="myAssess" class="giveBox">
+  <view class="left">
+  <image class="tubiao" src="../../static/img/mine/eva.png"></image>
+  <p>我的评价</p>
+  </view>
+  <image mode="widthFix" class="arrow" src="../../static/img/mine/back.png"></image>
+</view>
+<view bindtap="toLink" data-url="changePassword" class="giveBox lastGive">
+  <view   class="left">
+  <image class="tubiao" src="../../static/img/mine/password.png"></image>
+  <p>修改密码</p>
+  </view>
+  <image mode="widthFix" class="arrow" src="../../static/img/mine/back.png"></image>
+</view>
+</view>
+
+<!-- 退出登录 -->
+<view wx:if="{{username}}" bindtap="quit" class="quit">退出登录</view>
+<!-- <view wx:if="{{username}}" bindtap="endPosition" class="quit">结束定位</view> -->
+</view>

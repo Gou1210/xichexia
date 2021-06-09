@@ -1,0 +1,24 @@
+
+<view class="pictureBox">
+<text class="picText">
+  取车车辆照片：
+</text>
+<view class="takeList">
+<view wx:for="{{picList}}" wx:key="item" class="picOne">
+  <van-uploader wx:if="{{!item.img}}" file-list="{{ fileList }}" bind:after-read="afterRead" data-index="{{index}}"  data-type="油表" />
+  <view class="pic">
+    <van-icon bindtap="close"  data-index="{{index}}" class="close" wx:if="{{item.img}}" name="cross" />
+    <image  wx:if="{{item.img}}"  src="{{baseURL+item.img}}"></image>
+  </view>
+<text>{{item.title}}</text>
+</view>
+
+<view class="assessText">
+      <van-cell-group>
+        <van-field value="{{beforeDescript }}" bindchange="onMessage" type="textarea" bindtap="" placeholder="请输入车辆详细描述" autosize border="{{ false }}" />
+      </van-cell-group>
+    </view>
+</view>
+
+<view  bindtap="startWash" data-url="robSucceed" class="submit">开始洗车</view>
+</view>

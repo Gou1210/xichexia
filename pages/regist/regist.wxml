@@ -1,0 +1,29 @@
+<view class="body">
+				<form bindsubmit="formSubmit">
+					<view class="face-wapper">
+						<image src="https://6266-bfxy-hpbml-1302612614.tcb.qcloud.la/image/women/touxiang.png?sign=47a901d76bb4aa131663ad9c16e6869d&t=1594351727" class="face"></image>
+					</view>
+					
+					<view class="info-wapper">
+						<label class="words-lbl">手机号</label>
+						<input name="username" type="number" value="" class="input" placeholder="请输入手机号" bindinput="phoneInput" placeholder-class="graywords"/>
+					</view>
+					
+					<view class="info-wapper" >
+						<label class="words-lbl">验证码</label>
+            <input name="password" type="number" value="" password="true" class="input" placeholder="请输入验证码" placeholder-class="graywords"/>
+						<button wx:if="{{!showTime}}"  class="codeBtn" bindtap="getCaptcha">获取验证码</button>
+						<text class="timeNum" wx:if="{{showTime}}">{{timeNum}}s</text>
+					</view>
+          <view class="info-wapper" >
+						<label class="words-lbl">密码</label>
+						<input name="password" type="text" value="" password="true" class="input" placeholder="请输入密码" placeholder-class="graywords"/>
+					</view>
+					
+					<view class="info-wapper" >
+						<label style="font-size:30rpx;" class="words-lbl">重复密码</label>
+						<input name="repeatPassword" type="text" value="" password="true" class="input" placeholder="请再次输入密码" placeholder-class="graywords"/>
+					</view>
+            <button  class="submit" form-type="submit" >登录</button>
+				</form>
+	</view>

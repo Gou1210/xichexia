@@ -1,0 +1,11 @@
+/* pages/test/test.wxss */
+.box{
+  background-color: red;
+  width: 400rpx;
+  height: 100rpx;
+  display: flex;
+  flex-grow: 1;
+}
+.item{
+  
+}

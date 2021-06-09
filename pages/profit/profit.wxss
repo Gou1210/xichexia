@@ -1,0 +1,34 @@
+/* pages/profit/profit.wxss */
+page {
+  background-size: cover;
+}
+.time {
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  align-items: center;
+}
+
+.time .time-type {
+  font-size: 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* 订单列表 */
+.profit-list {
+  background: #fff;
+}
+.profit-list .profit-header{
+  padding: 30rpx;
+  color: #1989fa;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.profit-list .van-cell__title{
+  flex-basis: 50%;
+  font-size: 26rpx;
+}
+.profit-list .van-cell__value{
+  color: red;
+}

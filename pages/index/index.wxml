@@ -1,0 +1,106 @@
+<view class="map-container">
+  <block wx:if="{{username}}">
+    <image bindtap="toMine" data-url="mine" mode="widthFix" class="headMap" src="../../static/img/home/xichexia.png">
+    </image>
+    <span bindtap="toMine" data-url="mine" class="nameMap">{{username}}</span>
+  </block>
+  <block wx:if="{{!username}}">
+    <image bindtap="toMine" data-url="mine" mode="widthFix" class="headMap" src="../../static/img/mine/touxiang.png">
+    </image>
+    <button class="nameMap loginBtn" bindtap="loginTap">未登录</button>
+  </block>
+
+  <cover-view class="title">
+   <cover-view>蛤蟆洗车</cover-view>
+   <cover-view class="english">Hama wCar</cover-view>
+   <!-- <cover-view bindtap="endPosition" wx:if="{{isPosition}}"  class="">结束定位</cover-view>
+   <cover-view bindtap="shuaxin"   class="">刷新订单</cover-view> -->
+  </cover-view>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" bindcontroltap="controltap"
+    markers="{{markers}}" controls="{{controls}}" bindmarkertap="markertap" bindregionchange="regionchange"
+    show-location style="height:{{selectHeight}}"></map>
+</view>
+<view wx:if="{{status==1}}" class="selectBox">
+  <view  class="selectTitle">
+      <span>订单信息</span>
+      <span bindtap="backStatus" class="shut">X</span>
+    </view>
+  <view class="formBox">
+
+    <!-- 订单信息 -->
+    <view class="whiteBox">
+      <view class="wait"><span>洗车地点:</span><span>{{orderForm.locationArea}}</span></view>
+      <view class="wait"><span>车辆类型:</span><span>{{orderForm.carTypeText }}</span></view>
+      <view class="wait"><span>洗护类型:</span><span>{{orderForm.washProtectName}}</span></view>
+      <view class="wait"><span>订单金额:</span><span class="priceWait">¥{{orderForm.price}}</span></view>
+    </view>
+    <!-- 订单信息 -->
+  </view>
+<!-- 我要抢单 -->
+<view bindtap="startPosition" wx:if="{{!isPosition}}"  class="washVerify">开启定位</view>
+  <!-- 我要抢单 -->
+  <view bindtap="grabOrder" wx:if="{{isPosition}}" data-orderId='{{markerId}}' data-url="robSucceed" class="washVerify">我要抢单</view>
+  <!--我要抢单模块结束 -->
+
+
+
+
+<page-container  overlay="{{false}}" show="{{showPop}}" position="bottom" round close-on-slideDown>
+  <view class="pop" style="padding-bottom:{{orderList.length===0?'0':'40'}}rpx">
+      <view class="pop-title" >
+       <text> {{utils.orderTips(orderList.length)}}</text>
+      <icon class="iconfont {{showPopHeight?'icon-xiajiantou':'icon-shangjiantou'}}" bindtap="changePop"/>
+      </view>
+  
+    <view class="pop-list-box" style="height:{{utils.showPopHeight(orderList.length,showPopHeight)}}rpx">
+      <view class="pop-list" wx:for="{{orderList}}">
+          <text class="pop-list-title">{{item.locationArea||"暂无标题"}}</text>
+          <text class="pop-list-km">{{utils.parseKm(item.distance)||"0Km"}}</text>
+          <vie class="pop-list-btn" data-url="robSucceed" bindtap="startPosition" data-id="{{item.orderId}}">立即抢单</vie>
+      </view>
+      <view wx:if="{{orderList.length===0}}" class="no-data">
+        暂无数据
+      </view>
+        
+
+    </view>
+  </view>
+</page-container>
+  
+
+<wxs module="utils">
+
+function parseKm(km) {
+    if (km > 1000) {
+      return (km / 1000).toFixed(2) + "Km";
+    } else {
+      return parseInt(km) + "米";
+    }
+  }
+
+function orderLen(i){
+  if(i===0){
+      return '附近暂无可接订单'
+  }else{
+    return '附近可接订单('+i+')'
+  }
+
+}
+function showPopHeight(i,t){
+  if(i===0){
+    //暂无数据200 0
+    return t?200:0
+  }else{
+    //有数据 500 200
+    return t?500:200
+  }
+
+}
+module.exports = {
+  parseKm: parseKm,
+  orderTips:orderLen
+  showPopHeight:showPopHeight
+}
+
+</wxs>
+</view>

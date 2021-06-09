@@ -1,0 +1,162 @@
+.body {
+	border-top: solid 1px #DBDBDA;
+	padding: 0 40rpx;
+}
+
+/* 头像 start */
+.face-wapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	margin-top: 120rpx;
+	margin-bottom: 120rpx;
+}
+
+.face {
+	width: 160rpx;
+	height: 160rpx;
+}
+
+/* 头像 end */
+
+/* 注册登录 start */
+.info-wapper {
+	height: 120rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: solid 1px #DBDBDA;
+}
+
+.words-lbl {
+	color: #333333;
+	font-weight: 700;
+	width: 160rpx;
+	position: relative;
+}
+
+.words-lbl:after {
+	content: '*';
+	border-radius: 6rpx;
+	position: absolute;
+	left: -20rpx;
+	top: 50%;
+	transform: translateY(-40%);
+	color: #EA0101;
+}
+
+.input {
+	width: 300rpx;
+}
+
+.graywords {
+	color: #EAEAEA;
+}
+
+/* 注册登录 end */
+
+/* 第三方登录 start */
+.third-wapper {
+	width: 100%;
+	margin-top: 60rpx;
+
+}
+
+.third-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: center
+}
+
+.third-words {
+	color: #A9A9A9;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.single-line {
+	padding: 15rpx 20rpx;
+	width: 25%;
+	align-items: center;
+}
+
+.third-icos-wapper {
+	margin-top: 30rpx;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center
+}
+
+.third-ico {
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.third-btn-ico {
+	background-image: url(http://122.152.205.72:88/group1/M00/00/05/CpoxxFxFO-yAOjTaAAATCIZEzRU503.png);
+	width: 60rpx;
+	height: 60rpx;
+	background-color: white;
+	background-size: 60rpx 60rpx;
+	background-repeat: no-repeat;
+	border: none;
+	padding: 0;
+}
+
+button::after {
+	border: none;
+}
+
+.regist {
+	font-size: 32rpx;
+	color: #007AFF;
+	margin-top: 20rpx;
+	margin-left: 300rpx;
+}
+
+.codeBtn {
+	width: 200rpx !important;
+	height: 80rpx;
+	font-size: 26rpx;
+	padding: 0;
+}
+
+.submit {
+	width: 560rpx !important;
+	height: 88rpx;
+	background: #F0D208;
+	border-radius: 25rpx;
+	line-height: 88rpx;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50rpx;
+}
+
+button {
+	background: #F0D208;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.graywords {
+	color: #999999;
+}
+.timeNum{
+	background: #d3d3d3;
+	width: 100rpx;
+	height: 80rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20rpx;
+	margin-left: 80rpx;
+	color: #fff;
+}

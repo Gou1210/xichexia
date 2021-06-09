@@ -1,0 +1,20 @@
+<!--pages/profit/profit.wxml-->
+<view class="wrap">
+  <view class="profit-list">
+    <view class="profit-header flex">
+      <text>订单数: {{profitList.length}}</text>
+      <text>收益共计: ￥{{account}}</text>
+    </view>
+    <view class="profit-header flex">
+      <text>已提现收益:￥{{account}}</text>
+      <text>未提现收益: ￥{{notArrive}}</text>
+    </view>
+    <view>
+      <van-cell-group wx:for="{{profitList}}" wx:key="index">
+        <van-cell center title="订单编号：{{item.orderId}}" value="{{item.amount}}元" label="{{item.updateTime}}"></van-cell>
+      </van-cell-group>
+      <van-empty wx:if="{{!profitList.length}}" description="暂无数据" />
+    </view>
+  </view>
+
+</view>
